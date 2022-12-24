@@ -1,0 +1,54 @@
+# def solution(food):
+#     del food[0]
+#     answer = ''
+#     for i in range(len(food)):
+#         if food[i] % 2 != 0:
+#             food[i] = food[i] - 1
+#         food[i] = food[i] // 2
+#         answer += str(i+1) *food[i]
+#     answer += '0' + answer[::-1]
+#
+#     return answer
+# food = [1, 3, 4, 6]
+# print(solution(food))
+
+
+
+#과일 장수
+# def solution(k, m, score):
+#     ee = []
+#     result = 0
+#     score.sort(reverse=True)
+#     index = 0
+#     for i in range(len(score) // m):
+#         for j in range(m):
+#             ee.append(score[index])
+#             index += 1
+#         result += ee[-1] * m
+#     return result
+#
+# score = [1, 2, 3, 1, 2, 3, 1]
+# k = 3
+# m = 4
+# print(solution(k,m,score))
+
+
+#크기가 작은 부분 문자열
+# def solution(t, p):
+#     result = 0
+#     for i in range(len(t) - len(p) + 1):
+#         if t[i:i + len(p)] <= p:
+#             result += 1
+#     return result
+# t = "3141592"
+# p = "271"
+# print(solution(t, p))
+
+
+#안전지대
+def solution(board):
+    result = 0
+    for i in board:
+        if board in 1:
+            board[] = 2
+board = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0]]
